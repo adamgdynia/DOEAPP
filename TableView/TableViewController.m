@@ -29,7 +29,17 @@
 {
     [super viewDidLoad];
 
-    charakterList = [[NSArray alloc]initWithObjects: @"Stork", @"Pelican", @"Seahorse", nil];
+    charakterList = [[NSArray alloc]initWithObjects:
+                     @"[CODEBOOK] DOE Dolphin (Air Tank)",
+                     @"[CODEBOOK] DOE Pelican (Water Maker (from salt water))",
+                     @"[CODEBOOK] DOE Seahorse (UV Disinfection)",
+                     @"[CODEBOOK] DOE Seal (Calorifier)",
+                     @"[CODEBOOK] DOE Stork (Water Maker (from fresh water))",
+                     @"[CODEBOOK] DOE Swan (Constant flow electric heater)",
+                     @"[LEAFLET] DOE Pelican (Water Maker (from salt water))",
+                     @"[LEAFLET] DOE Seal (Calorifier)",
+                     @"[LEAFLET] DOE Seahorse (UV Disinfection)",
+                     @"[LEAFLET] DOE PRODUCTION", nil];
 
 }
 

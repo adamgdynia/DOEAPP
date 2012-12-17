@@ -14,6 +14,6 @@
 
 @property (strong,nonatomic) NSString *charakterName;
 
-@property (weak, nonatomic) IBOutlet UIImageView *characterImage;
+@property (weak, nonatomic) IBOutlet UIWebView *characterImage;
 
 @end

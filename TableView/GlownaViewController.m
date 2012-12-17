@@ -29,7 +29,7 @@
     [super viewDidLoad];
     
 
-    NSURL *url = [NSURL URLWithString:@"http://www.doe.pl/INNE_PLIKI/DOE_PRODUCT_INDEX.pdf"];
+    NSURL *url = [NSURL URLWithString:@"http://www.doe.pl/water.html"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [stronaglowna loadRequest: request];
     

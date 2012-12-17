@@ -31,9 +31,18 @@
     
     //Create UI ImageObjects
     
-    UIImage * pelicanImage = [UIImage imageNamed:@"PELICAN_ipad.png"];
-    UIImage * storkImage = [UIImage imageNamed:@"STORK_ipad.png"];
-    UIImage * seahorseImage = [UIImage imageNamed:@"SEAHORSE_ipad.png"];
+    NSString *dolphin = [[NSBundle mainBundle] pathForResource:@"cdolphin" ofType:@"pdf" inDirectory:@"CODEBOOKS"];
+    NSString *pelican = [[NSBundle mainBundle] pathForResource:@"cpelican" ofType:@"pdf" inDirectory:@"CODEBOOKS"];
+    NSString *seachorse = [[NSBundle mainBundle] pathForResource:@"cseachorse" ofType:@"pdf" inDirectory:@"CODEBOOKS"];
+    NSString *seal = [[NSBundle mainBundle] pathForResource:@"cseal" ofType:@"pdf" inDirectory:@"CODEBOOKS"];
+    NSString *stork = [[NSBundle mainBundle] pathForResource:@"cstork" ofType:@"pdf" inDirectory:@"CODEBOOKS"];
+    NSString *swan = [[NSBundle mainBundle] pathForResource:@"cswan" ofType:@"pdf" inDirectory:@"CODEBOOKS"];
+    
+    NSString *pelican_leaflet = [[NSBundle mainBundle] pathForResource:@"DOE_PELICAN" ofType:@"pdf" inDirectory:@"LEAFLETS"];
+    NSString *seal_leaflet = [[NSBundle mainBundle] pathForResource:@"DOE_SEAL" ofType:@"pdf" inDirectory:@"LEAFLETS"];
+    NSString *seahorse_leaflet = [[NSBundle mainBundle] pathForResource:@"DOE_SEAHORSE" ofType:@"pdf" inDirectory:@"LEAFLETS"];
+    NSString *doe_product = [[NSBundle mainBundle] pathForResource:@"DOE_PRODUCT_INDEX" ofType:@"pdf" inDirectory:@"LEAFLETS"];
+
     
     //Set the title of the View
     self.title = charakterName;
@@ -41,15 +50,35 @@
     //Switch set UIImageView based of the main view
     switch (characterNumber) {
         case 0:
-            characterImage.image = storkImage;
+            [self.characterImage loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:dolphin]]];
             break;
         case 1:
-            characterImage.image = pelicanImage;
+            [self.characterImage loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:pelican]]];
             break;
         case 2:
-            characterImage.image = seahorseImage;
+            [self.characterImage loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:seachorse]]];
             break;
-            
+        case 3:
+            [self.characterImage loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:seal]]];
+            break;
+        case 4:
+            [self.characterImage loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:stork]]];
+            break;
+        case 5:
+            [self.characterImage loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:swan]]];
+            break;
+        case 6:
+            [self.characterImage loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:pelican_leaflet]]];
+            break;
+        case 7:
+            [self.characterImage loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:seal_leaflet]]];
+            break;
+        case 8:
+            [self.characterImage loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:seahorse_leaflet]]];
+            break;
+        case 9:
+            [self.characterImage loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:doe_product]]];
+            break;
         default:
             break;
     }
