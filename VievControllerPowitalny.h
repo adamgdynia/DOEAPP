@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  VievControllerPowitalny.h
 //  TableView
 //
 //  Created by Adam Kasprzak on 17.12.2012.
@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-@property (strong, nonatomic) UIWindow *window;
+@interface VievControllerPowitalny : UIView
 
 @end

@@ -10,8 +10,13 @@
 
 @implementation AppDelegate
 
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [[UITabBar appearance] setSelectedImageTintColor:[UIColor whiteColor]];
+    [[UITabBar appearance] setBackgroundColor:[UIColor blackColor]];
+//    [[UITabBar appearance] setBackgroundImage:[UIImage imageNamed:@"TLO.png"]];
+    //[[UITabBarController ] setBackgroundImage:[UIImage imageNamed:@"TLO.jpg"];
     // Override point for customization after application launch.
     return YES;
 }
@@ -42,5 +47,6 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
 
 @end

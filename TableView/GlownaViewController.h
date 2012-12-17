@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  GlownaViewController.h
 //  TableView
 //
 //  Created by Adam Kasprzak on 17.12.2012.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-@property (strong, nonatomic) UIWindow *window;
+@interface GlownaViewController : UIViewController
+@property (nonatomic, strong) IBOutlet UIWebView *stronaglowna;
 
 @end
