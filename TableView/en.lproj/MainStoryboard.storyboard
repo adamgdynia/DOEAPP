@@ -265,35 +265,6 @@
         <image name="home.png" width="30" height="30"/>
         <image name="tlo_about.png" width="1024" height="109"/>
     </resources>
-    <classes>
-        <class className="ConnectViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ConnectViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
-            </relationships>
-        </class>
-        <class className="DetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="characterImage" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="GlownaViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GlownaViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="stronaglowna" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="TableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TableViewController.h"/>
-        </class>
-        <class className="xxxViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/xxxViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="strona" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>

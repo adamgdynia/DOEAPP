@@ -46,6 +46,7 @@
     
     //Set the title of the View
     self.title = charakterName;
+    [characterImage setScalesPageToFit:YES];
     
     //Switch set UIImageView based of the main view
     switch (characterNumber) {
