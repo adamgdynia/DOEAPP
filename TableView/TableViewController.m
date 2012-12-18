@@ -39,6 +39,7 @@
                      @"[LEAFLET] DOE Pelican (Water Maker (from salt water))",
                      @"[LEAFLET] DOE Seal (Calorifier)",
                      @"[LEAFLET] DOE Seahorse (UV Disinfection)",
+                     @"[LEAFLET] DOE Swan (Electric Constant flow heater)",
                      @"[LEAFLET] DOE PRODUCTION", nil];
 
 }

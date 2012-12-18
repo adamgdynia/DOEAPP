@@ -42,6 +42,7 @@
     NSString *seal_leaflet = [[NSBundle mainBundle] pathForResource:@"DOE_SEAL" ofType:@"pdf" inDirectory:@"LEAFLETS"];
     NSString *seahorse_leaflet = [[NSBundle mainBundle] pathForResource:@"DOE_SEAHORSE" ofType:@"pdf" inDirectory:@"LEAFLETS"];
     NSString *doe_product = [[NSBundle mainBundle] pathForResource:@"DOE_PRODUCT_INDEX" ofType:@"pdf" inDirectory:@"LEAFLETS"];
+    NSString *swan_leaflet = [[NSBundle mainBundle] pathForResource:@"DOE_SWAN" ofType:@"pdf" inDirectory:@"LEAFLETS"];
 
     
     //Set the title of the View
@@ -78,6 +79,9 @@
             [self.characterImage loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:seahorse_leaflet]]];
             break;
         case 9:
+            [self.characterImage loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:swan_leaflet]]];
+            break;
+        case 10:
             [self.characterImage loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:doe_product]]];
             break;
         default:
